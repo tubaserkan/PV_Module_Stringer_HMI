@@ -6,7 +6,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 import numpy as np
 
-# --- SARSILMAZ ANAYASA AYARLARI ---
+
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue")
 
@@ -18,14 +18,14 @@ class HMI_Final_Master_v12_22(ctk.CTk):
         self.geometry("1600x950")
         self.configure(fg_color="#0a0c12")
 
-        # OTONOM GRID YAPISI
+     
         self.grid_columnconfigure(0, weight=3) # Ribbon
         self.grid_columnconfigure(1, weight=3) # BOŞ ALAN (Müşteri Rezervi)
         self.grid_columnconfigure(2, weight=2) # 3D Cube & Log
         self.grid_rowconfigure(2, weight=3)
         self.grid_rowconfigure(3, weight=2)
 
-        # Değişkenler
+       
         self.ribbon_objects = []
         self.ticker_text = "⚡ DURUM: AKTİF | 3D Hologram Senkronize | Kalite Analizi: CANLI | Lokasyon: Bursa | "
         self.pie_angle = 90
